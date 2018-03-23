@@ -182,7 +182,7 @@ class TimedGameProxy():
           while True:
               
               # If time is up              
-              if self.timed == True and time.time() - self.timeStart >= 60:
+              if self.timed == 'True' and time.time() - self.timeStart >= 60:
                     # Find winner by highest point
                     winner = self.getWinner()
                     print '\n\nGame Over!! Time ran out!! ' + winner[0] +' won with a score of ' + str(winner[1])
